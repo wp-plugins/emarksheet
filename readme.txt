@@ -1,4 +1,4 @@
-=== Online Exam Software : eMarksheet ===
+=== Online Marksheet Creator Software : eMarksheet ===
 Contributors: rohitashv
 Link: eexamhall.com
 Tags: emarksheet, online marksheet creator, create marksheet online, online marksheet
