@@ -3,7 +3,7 @@ Contributors: rohitashv
 Link: eexamhall.com
 Tags: emarksheet, online marksheet creator, create marksheet online, online marksheet
 Requires at least: 3.2
-Stable tag: 1.15
+Stable tag: 1.31
 
 This is a simple and unique wordpress plugin to create a simple marksheet using wordpress. You can also give a link to your users to see the result and print it.
 
@@ -17,6 +17,7 @@ b) Add Subject
 c) Enroll Student
 d) Add marks
 e) Print Marksheet
+f) Add Shortcode to page or post to show the result on the frontpage
 
 For more details you can visit http://eexamhall.com or can send a mail on ucerturohit@gmail.com
 
@@ -47,26 +48,20 @@ This section describes how to install the plugin and get it working.
 6. Setting for the school
 7. Print Marksheet1
 8. Print Marksheet2
+9. Frontend Result
+
 == Changelog ==
  
 =0.2=
 First Version released
 
 =1.2=
-Now eExamhall is ready to use from its dashboard only
+Now you can set the result on front end by adding shortcode [SHOW_EMARKSHEET]
 
-=2.1=
-1. Second Stable Version Released
-2. Update or delete Question
+=1.3=
+Now Print option is available at front end
+and you can minimum passing marks on each Subject
+Uninstall feature is also available
 
-=2.9=
-1. Now the shortcode for each quiz is different and the code is compatible for all sorts of language ie. chinese, english
-
-=2.91=
-1. Added Premium Feature
-
-=3.0=
-1. Added Uninstall Menu
-
-=3.1=
-1. Added Premium Feature
+=1.31= 
+minor bug resolved

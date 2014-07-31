@@ -49,6 +49,7 @@ $result1 = "CREATE TABLE IF NOT EXISTS `emarksheet_subject` (
   `class` int(11) NOT NULL,
   `sub_name` varchar(255) NOT NULL,
   `total_marks` int(11) NOT NULL,
+  `min_pass` int(11) DEFAULT 33,
   PRIMARY KEY (`id`)
 )AUTO_INCREMENT=6 ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;";
 $wpdb->query($result1);
