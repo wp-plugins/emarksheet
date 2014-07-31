@@ -17,16 +17,16 @@ if(isset($_GET['action']))
 	<form action='<?php echo admin_url("admin.php?page=eMarksheet-add-marks&action_new=add_marks_final&class_id=$su_n"); ?>' method='post'>
 	<input type='hidden' name='st_id' value="<?php echo $id; ?>">
 	<table class="responsive display table table-bordered" style="width:80%;">
-	<tr><th>Sr No</th><th>Subject Name</th><th>Total Marks</th><th>Marks Obtained</th></tr>
+	<tr><th>Sr No</th><th>Subject Name</th><th>Total Marks</th><th>Minimum Passing Marks</th><th>Marks Obtained</th></tr>
 	<?php
 	$i=1;
 	foreach($selectd_row1 as $selectd_row1)
 	{
-		echo "<tr><td>".$i."</td><td>".ucfirst($selectd_row1->sub_name)."</td><td><input type='text' name='tm_".$i."' value='".$selectd_row1->total_marks."' readonly='readonly' style='width:60px;' ></td><td> <input type='text' name='om_".$i."' style='width:60px;'/></td></tr>";
+		echo "<tr><td>".$i."</td><td>".ucfirst($selectd_row1->sub_name)."</td><td><input type='text' name='tm_".$i."' value='".$selectd_row1->total_marks."' readonly='readonly' style='width:60px;' ></td><td><input type='text' name='mm_".$i."' value='".$selectd_row1->min_pass."' readonly='readonly' style='width:60px;' ></td><td> <input type='text' name='om_".$i."' style='width:60px;'/></td></tr>";
 	$i++;
 	}
 	?>
-	<tr><td colspan='4'><center><button type="submit" class='btn btn-info'>Add Marks Now !!!</button></center></td>
+	<tr><td colspan='5'><center><button type="submit" class='btn btn-info'>Add Marks Now !!!</button></center></td>
 	</table>
 	<?php
 }
