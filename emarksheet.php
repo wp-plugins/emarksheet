@@ -4,7 +4,7 @@ Plugin Name: emarksheet
 Plugin URI: http://eexamhall.com/
 Description: This is a simple and unique wordpress plugin to create a simple marksheet using wordpress. You can also give a link to your users to see the result and print it.
 Author: rohitashv
-Version: 1.2
+Version: 1.3
 Author URI: http://eexamhall.com/
 */
 register_activation_hook( __FILE__, 'emarksheet_InstallScript' );
@@ -23,7 +23,8 @@ function emarksheet_menu()
 	add_submenu_page( 'eMarksheet-main', 'eMarksheet', 'Add Marks', 'administrator', 'eMarksheet-add-marks', 'emark_add_marks');
 	add_submenu_page( 'eMarksheet-main', 'eMarksheet', 'Settings', 'administrator', 'eMarksheet-settings', 'emark_settings');
 	add_submenu_page( 'eMarksheet-main', 'eMarksheet', 'Print Marksheet', 'administrator', 'eMarksheet-print', 'emark_print');
-	add_submenu_page( 'eMarksheet-main', 'eMarksheet', 'Help & Supprot', 'administrator', 'eMarksheet-help', 'emark_help');
+	add_submenu_page( 'eMarksheet-main', 'eMarksheet', 'Help & Support', 'administrator', 'eMarksheet-help', 'emark_help');
+	add_submenu_page( 'eMarksheet-main', 'eMarksheet', 'Un-Install', 'administrator', 'eMarksheet-remove', 'emark_uninstall');
 }
 function emark_add_class()
 {
@@ -56,6 +57,10 @@ function emark_print()
 function emark_help()
 {
 	include('menu-pages/help.php');
+}
+function emark_uninstall()
+{
+	include('menu-pages/uninstall.php');
 }
 add_shortcode('SHOW_EMARKSHEET','lordlinus_emark_shortcode');
 function lordlinus_emark_shortcode()
