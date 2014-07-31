@@ -111,27 +111,35 @@ if(isset($_POST['roll_no']))
 		echo "</th></tr>";
 		echo "</table>";
 		echo "<h4><center>Results</center></h4>";
-		$per = $om_total/$tm_total*100;
-		$per = round($per,2);
+if($tm_total != '0')
+		{
+			$per = $om_total/$tm_total*100;
+			$per = round($per,2);
 
-		$req_per = $mm_total/$tm_total*100;
-		$req_per = round($req_per,2);
-		if($fail2 == '1')
-			$div = "Fail";
-		elseif($per>=60 && $per<=100)
-			$div = "First Division";
-		elseif($per<=60 && $per>=50)
-			$div = "Second Division";
-		elseif($per<=50 && $per>=$req_per)
-			$div = "Third Division";
-		else
-			$div = "Fail";
-		echo "<table class='table' border='1' style='width:100%;'><tr><th>Percentage : </th><td> $per %</td><th>Minimum Passing Percentage : </th><td> $req_per % </td><th>Final Result : </th><td> $div </td></table>";
-		echo "</div>";
+			$req_per = $mm_total/$tm_total*100;
+			$req_per = round($req_per,2);
+			if($fail2 == '1')
+				$div = "Fail";
+			elseif($per>=60 && $per<=100)
+				$div = "First Division";
+			elseif($per<=60 && $per>=50)
+				$div = "Second Division";
+			elseif($per<=50 && $per>=$req_per)
+				$div = "Third Division";
+			else
+				$div = "Fail";
+			echo "<table class='table' border='1' style='width:100%;'><tr><th>Percentage : </th><td> $per %</td><th>Minimum Passing Percentage : </th><td> $req_per % </td><th>Final Result : </th><td> $div </td></table>";
+			echo "</div>";
+		
 ?>
 <input type="button" class="btn btn-info" value="Print This Marksheet !!!" onclick="print_this();">
 <?php
-	}
+}
+		else
+		{
+			echo "<div class='alert_lor alert-error-lord'>Please Add Marks to the subjects </div>";
+		}
+}	
 	else
 	{
 		echo "<div class='alert_lor alert-error-lord'>Sorry !!! Roll No does not exists .... </div>";
