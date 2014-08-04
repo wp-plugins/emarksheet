@@ -4,7 +4,7 @@ Plugin Name: emarksheet
 Plugin URI: http://eexamhall.com/
 Description: This is a simple and unique wordpress plugin to create a simple marksheet using wordpress. You can also give a link to your users to see the result and print it.
 Author: rohitashv
-Version: 1.31
+Version: 1.33
 Author URI: http://eexamhall.com/
 */
 register_activation_hook( __FILE__, 'emarksheet_InstallScript' );
@@ -61,10 +61,5 @@ function emark_help()
 function emark_uninstall()
 {
 	include('menu-pages/uninstall.php');
-}
-add_shortcode('SHOW_EMARKSHEET','lordlinus_emark_shortcode');
-function lordlinus_emark_shortcode()
-{
-	include("lordlinus_marksheet_shortcode.php");
 }
 ?>

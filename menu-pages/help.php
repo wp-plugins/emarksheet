@@ -10,8 +10,6 @@ Step 3 : Enroll Student <br/>
 Step 4 : Add Marks<br/>
 Step 5 : Print Marksheet<br/><br/>
 <hr/>
-<strong>Launching Marksheet : </strong><br/><br/>
-To launch Result on your front end, just add shortcode <strong><em>[SHOW_EMARKSHEET]</em></strong> to your page or post and publish it
-<hr/>
+
 <strong>Regarding Support : </strong><br/><br/>
 in case of any support, you can send us mail at <strong><em>ucerturohit[at]gmail[dot]com</em></strong>
