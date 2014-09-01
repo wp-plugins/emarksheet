@@ -11,7 +11,7 @@ $add_quiz = "CREATE TABLE IF NOT EXISTS `emarksheet_marks` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `student_id` int(11) NOT NULL,
   `class_id` int(11) NOT NULL,
-  `marks` varchar(255) NOT NULL,
+  `marks` TEXT NOT NULL,
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=4 ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;";
 $wpdb->query($add_quiz);

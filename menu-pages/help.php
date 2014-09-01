@@ -12,4 +12,6 @@ Step 5 : Print Marksheet<br/><br/>
 <hr/>
 
 <strong>Regarding Support : </strong><br/><br/>
-in case of any support, you can send us mail at <strong><em>ucerturohit[at]gmail[dot]com</em></strong>
+in case of any support : <br/>
+1. You can visit at <a href='http://www.crowinfotech.in/supportcenter/'>http://www.crowinfotech.in/supportcenter</a><br/>
+2. you can send us mail at <strong><em>ucerturohit[at]gmail[dot]com</em></strong>/a
