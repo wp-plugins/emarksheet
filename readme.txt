@@ -1,9 +1,9 @@
-=== Online Exam Software : eMarksheet ===
+=== Online Marksheet Creater : eMarksheet ===
 Contributors: rohitashv
 Link: eexamhall.com
 Tags: emarksheet, online marksheet creator, create marksheet online, online marksheet
-Requires at least: 3.2
-Stable tag: 1.34
+Requires at least: 4.0
+Stable tag: 2.6
 
 This is a simple and unique wordpress plugin to create a simple marksheet using wordpress. You can also give a link to your users to see the result and print it.
 
@@ -30,24 +30,23 @@ These are the basic features.
 
 **Premium Features**
 
-1) Show Marksheet on the front page of your website.
+1) Allws students to search result by roll no and DOB
 
-To purchase this or discuss more about it please visit :
+2) Students Details Update
 
-http://www.crowinfotech.in
+3) Update Institute Logo
 
-or
+4) Update Students Marks
 
-http://www.crowinfotech.in/supportcenter/
+5) Export results to excel
 
-For more details you can visit http://crowinfotech.in or can send a mail on ucerturohit@gmail.com
+6) Add Semester to class
 
-Documentation is available on the following link :
-http://eexamhall.com/documentation
+To purchase this 
 
-To see the forum list and discussion please go here :
-http://www.crowinfotech.in/supportcenter/
+Go to the site http://store.taiyarikaro.com/shop/
 
+or discuss more about it you can send a mail on ucerturohit@gmail.com
 
 == Installation ==
 
@@ -86,4 +85,7 @@ Uninstall feature is also available
 minor bug resolved
 
 =1.33=
+minor bug resolved
+
+=2.6=
 minor bug resolved

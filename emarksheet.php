@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: emarksheet
-Plugin URI: http://crowinfotech.in/
+Plugin URI: http://singhalcompetitionclasses.com
 Description: This is a simple and unique wordpress plugin to create a simple marksheet using wordpress. You can also give a link to your users to see the result and print it.
 Author: rohitashv
-Version: 1.34
-Author URI: http://crowinfotech.in/
+Version: 2.6
+Author URI: http://singhalcompetitionclasses.com
 */
 register_activation_hook( __FILE__, 'emarksheet_InstallScript' );
 function emarksheet_InstallScript()
