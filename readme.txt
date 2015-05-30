@@ -1,9 +1,9 @@
 === Online Marksheet Creater : eMarksheet ===
 Contributors: rohitashv
-Link: eexamhall.com
+Link: http://impulsesoftech.com
 Tags: emarksheet, online marksheet creator, create marksheet online, online marksheet
 Requires at least: 4.0
-Stable tag: 2.6
+Stable tag: 2.7
 
 This is a simple and unique wordpress plugin to create a simple marksheet using wordpress. You can also give a link to your users to see the result and print it.
 
@@ -42,9 +42,13 @@ These are the basic features.
 
 6) Add Semester to class
 
-To purchase this 
+To See a Demo and purchase this 
 
-Go to the site http://store.taiyarikaro.com/shop/
+Go to the site http://impulsesoftech.com/index.php/emarksheet-premium/
+
+For Support Go to Link :
+
+http://impulsesoftech.com/forum/
 
 or discuss more about it you can send a mail on ucerturohit@gmail.com
 

@@ -38,9 +38,22 @@ elseif(isset($_POST['get_st_lt']) || isset($_GET['action_new']))
 		$class_n = $_GET['class_id'];
 		$student_id = $_POST['st_id'];
 		$data = serialize($_POST);
-		$insert_st = "insert into `emarksheet_marks`(`id`,`student_id`,`class_id`,`marks`) values('','$student_id','$class_n','$data')";
-		$wpdb->query($insert_st);
-		echo "<div class='alert alert-success'> Marks Added Successfully !!! </div>";
+		$gt_old = "select * from `emarksheet_marks` where `student_id`='$student_id' AND `class_id`='$class_n'";
+		$gt_old = $wpdb->get_results($gt_old);
+		if($gt_old)
+		{
+			$mk_id = $gt_old[0]->id;
+			$upds = "update `emarksheet_marks` set `marks`='$data' where `id`='$mk_id'";
+			$wpdb->query($upds);
+			//echo $wpdb->last_error;
+			echo "<div class='alert alert-success'> Marks Updated Successfully !!! </div>";
+		}
+		else
+		{
+			$insert_st = "insert into `emarksheet_marks`(`id`,`student_id`,`class_id`,`marks`) values('','$student_id','$class_n','$data')";
+			$wpdb->query($insert_st);
+			echo "<div class='alert alert-success'> Marks Added Successfully !!! </div>";
+		}
 	}
 	$select_qury1 = "select * from `emarksheet_class` where `id`='$class_n'";
 	$select_data1 = $wpdb->get_results($select_qury1);
