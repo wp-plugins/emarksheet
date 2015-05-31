@@ -1,9 +1,9 @@
-=== Online Marksheet Creater : eMarksheet ===
+=== Online Marksheet Creator : eMarksheet ===
 Contributors: rohitashv
 Link: http://impulsesoftech.com
 Tags: emarksheet, online marksheet creator, create marksheet online, online marksheet
 Requires at least: 4.0
-Stable tag: 2.7
+Stable tag: 2.8
 
 This is a simple and unique wordpress plugin to create a simple marksheet using wordpress. You can also give a link to your users to see the result and print it.
 
@@ -92,4 +92,7 @@ minor bug resolved
 minor bug resolved
 
 =2.6=
+minor bug resolved
+
+=2.8 ==
 minor bug resolved

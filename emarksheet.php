@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: emarksheet
+Plugin Name: Online Marksheet Creator : eMarksheet
 Plugin URI: http://impulsesoftech.com
 Description: This is a simple and unique wordpress plugin to create a simple marksheet using wordpress. You can also give a link to your users to see the result and print it.
 Author: rohitashv
-Version: 2.7
+Version: 2.8
 Author URI: http://impulsesoftech.com
 */
 register_activation_hook( __FILE__, 'emarksheet_InstallScript' );
